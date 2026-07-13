@@ -260,3 +260,17 @@ h2 {
   /* Floating animation for the image */
   animation: floatImage 3s ease-in-out infinite;
 }
+#playMusic {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background: #ff4d6d;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 9999;
+  }
