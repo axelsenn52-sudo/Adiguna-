@@ -38,13 +38,20 @@
                 .then(reg => console.log('Service Worker registered'))
                 .catch(err => console.log('Service Worker registration failed:', err));
         }
-    </script> <audio id="bgMusic" autoplay loop>
-    <source src="lagu.mp3" type="audio/mpeg">
+    <button id="playMusic">▶ Putar Musik</button>
+
+<audio id="bgMusic" loop>
+    <source src="laguku.mp3" type="audio/mpeg">
 </audio>
+
 <script>
-document.addEventListener("click", function () {
-    document.getElementById("bgMusic").play();
-}, { once: true });
+const music = document.getElementById("bgMusic");
+const button = document.getElementById("playMusic");
+
+button.addEventListener("click", () => {
+    music.play();
+    button.style.display = "none";
+});
 </script>
 </body>
 </html>
